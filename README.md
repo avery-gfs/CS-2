@@ -34,9 +34,7 @@ Please make sure to have the following software installed for next class:
 - Python (version 3.10 or later) https://www.python.org/downloads
 - A code editor (Visual Studio Code is recommended) https://code.visualstudio.com/Download
 
-If you install Visual Studio Code, you may want to install:
-
-- The Python extension from Microsoft https://marketplace.visualstudio.com/items?itemName=ms-python.python
+If you install Visual Studio Code, you may want to install the Python extension from Microsoft https://marketplace.visualstudio.com/items?itemName=ms-python.python.
 
 ## Grading and Workload
 
@@ -70,3 +68,11 @@ You may not use Github Copilot, Replit AI, or other "code autocomplete" AI tools
 ## Feedback
 
 I'll try to provide feedback on the code you write for this class. Writing code that works is only the first step of software engineering; the next step is figuring out how to make your code modern, simple, and efficient. My hope is that getting feedback will help you level-up this important aspect of your programming skills.
+
+## Links
+
+[Python tutorial](https://docs.python.org/3/tutorial/index.html)
+
+[Python library docs](https://docs.python.org/3/library/index.html)
+
+[Python textbook](https://runestone.academy/ns/books/published/fopp/index.html?mode=browsing)
