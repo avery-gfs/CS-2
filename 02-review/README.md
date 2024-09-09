@@ -22,9 +22,10 @@
 - Files: reading and writing
 - Random numbers
 - Common errors
+- Intro time complexity
 
 ## Problems
 
-Palindrome finder
+Palindrome finder: download `unixdict.txt` from the data folder of this repository. Write a program to read the words in the file and find the palindromes (words that are the same in reverse as forwards). Find the longest palindrome in the file.
 
-Number guessing game
+Number guessing game: generate a random integer between 1 and 100. Ask the user for guesses. After each guess, tell the user if the guess was too high or low. Repeat until the user guesses the correct number.
