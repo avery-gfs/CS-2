@@ -28,5 +28,3 @@
 Palindrome finder
 
 Number guessing game
-
-Reverse words
