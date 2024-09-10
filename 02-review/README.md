@@ -25,6 +25,10 @@
 
 ## Problems
 
-Palindrome finder: download `unixdict.txt` from the data folder of this repository. Write a program to read the words in the file and find the palindromes (words that are the same in reverse as forwards). Find the longest palindrome in the file.
+**Palindrome Finder**: download `unixdict.txt` from the data folder of this repository. Write a program to read the words in the file and find the palindromes (words that are the same in reverse as forwards). Find the longest palindrome in the file.
 
-Anagram finder: Write a program that takes a word as input and finds all of the anagrams (from `unixdict.txt`) of the input word. Words are anagrams of each other if they contains the same letters in a different order. For example, the anagrams of `time` are `mite`, `emit`, and `item`. Find the largest set of anagrams in the file.
+**Anagram Finder**: Write a program that takes a word as input and finds all of the anagrams (from `unixdict.txt`) of the input word. Words are anagrams of each other if they contains the same letters in a different order. For example, the anagrams of `time` are `mite`, `emit`, and `item`. Find the largest set of anagrams in the file.
+
+**Day Calculator**: Get a string `startDay` and a number `n` as input, print out what the day of the week it will be `n` days from `startDay`.
+
+**Change Calculator**: Get a number `n` as input. Calculate the "change" for `n`; that is, the smallest set of quarters, dimes, nickles, and pennies to make `n` cents.
