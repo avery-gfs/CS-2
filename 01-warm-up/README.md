@@ -37,9 +37,9 @@ print(f"Hello {name}")
 ```py
 num = float(input("Enter a number: "))
 
-if n > 0:
+if num > 0:
    print("positive")
-elif n < 0:
+elif num < 0:
    print("negative")
 else:
    print("zero")
@@ -53,7 +53,7 @@ b = int(input("Enter a number: "))
 
 # lots of possible ways to do this, but here's one solution
 
-if a % 2 == b % 2:
+if a % 2 != b % 2:
    print("ok")
 else:
    print("nope")
