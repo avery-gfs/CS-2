@@ -15,7 +15,7 @@
 - Functions: arguments, arity, side-effects, return values, early return
 - Functions vs methods
 - Variable scope
-- Lists: indexing, negative indexing, slicing, length, `.append()`, `.reverse()`, `.sort()`, `*`
+- Lists: indexing, negative indexing, slicing, length, `append`, `reverse`, `sort`, `*`
 - String `split` and `join`
 - Mutability: aliasing, cloning, non-mutating functions
 - For loops: with `range`, with list, with state
