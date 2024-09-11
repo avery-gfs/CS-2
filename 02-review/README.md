@@ -2,7 +2,7 @@
 
 - Repl
 - Printing and user input
-- Primitives: booleans, numbers (ints and floats), strings, none
+- Primitives: booleans, numbers (ints and floats), strings, `none`
 - Type conversions
 - Variable names
 - Numerical operators: `+`, `-`, `*`, `/`, `**`, `%`, `<`, `>`, `<=`, `>=`
@@ -25,7 +25,7 @@
 
 ## Problems
 
-**Palindrome Finder**: download `unixdict.txt` from the data folder of this repository. Write a program to read the words in the file and find the palindromes (words that are the same in reverse as forwards). Find the longest palindrome in the file.
+**Palindrome Finder**: Download `unixdict.txt` from the data folder of this repository. Write a program to read the words in the file and find the palindromes (words that are the same in reverse as forwards). Find the longest palindrome in the file.
 
 **Anagram Finder**: Write a program that takes a word as input and finds all of the anagrams (from `unixdict.txt`) of the input word. Words are anagrams of each other if they contains the same letters in a different order. For example, the anagrams of `time` are `mite`, `emit`, and `item`. Find the largest set of anagrams in the file.
 
