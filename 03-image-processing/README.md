@@ -13,6 +13,40 @@
 - Dithering https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 - Kernels and convolution https://setosa.io/ev/image-kernels/
 
+## Demo: Color Channel Manipulation
+
+```py
+from PIL import Image
+
+def distance(r1, g1, b1, r2, g2, b2):
+  return ((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2) ** 0.5
+
+im = Image.open("bird.jpg")
+output = Image.new(im.mode, im.size)
+
+for y in range(im.height):
+  for x in range(im.width):
+    (r, g, b) = im.getpixel((x, y))
+
+    if (distance(r, g, b, 185, 35, 47) < 100):
+      pass
+    elif (distance(r, g, b, 246, 199, 21) < 100):
+      pass
+    else:
+      l = round((r + g + b) / 3)
+      r = l
+      g = l
+      b = l
+
+    output.putpixel((x, y), (r, g, b))
+
+output.save("output.jpg")
+```
+
+![demo.jpg](color channel demo)
+
+## Starter Code
+
 - Setup
 
   ```py
