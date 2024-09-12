@@ -18,19 +18,24 @@
 ```py
 from PIL import Image
 
-def distance(r1, g1, b1, r2, g2, b2):
+def distance(c1, c2):
+  (r1, g1, b1) = c1
+  (r2, g2, b2) = c2
   return ((r1 - r2) ** 2 + (g1 - g2) ** 2 + (b1 - b2) ** 2) ** 0.5
 
 im = Image.open("bird.jpg")
 output = Image.new(im.mode, im.size)
 
+red = (185, 35, 47)
+yellow = (246, 199, 21)
+
 for y in range(im.height):
   for x in range(im.width):
     (r, g, b) = im.getpixel((x, y))
 
-    if (distance(r, g, b, 185, 35, 47) < 100):
+    if (distance((r, g, b), red) < 100):
       pass
-    elif (distance(r, g, b, 246, 199, 21) < 100):
+    elif (distance((r, g, b), yellow) < 100):
       pass
     else:
       l = round((r + g + b) / 3)
@@ -41,6 +46,7 @@ for y in range(im.height):
     output.putpixel((x, y), (r, g, b))
 
 output.save("output.jpg")
+
 ```
 
 ![color channel demo](demo.jpg)
@@ -61,7 +67,7 @@ output.save("output.jpg")
 
       # your code here
 
-      output.putpixel((x, y), (r, r, r))
+      output.putpixel((x, y), (r, g, b))
 
   output.save("output.jpg") # save output image
   ```
