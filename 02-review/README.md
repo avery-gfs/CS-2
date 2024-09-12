@@ -26,6 +26,10 @@
 - Files: reading and writing
 - Random numbers
 
+## To Do
+
+- Install PIL (pillow): https://pillow.readthedocs.io/en/latest/index.html
+
 ## Problems
 
 **Palindrome Finder**: Download and save the `unixdict.txt` file. Write a program to read the words in the file and find the palindromes (words that are the same in reverse as forwards). Find the longest palindrome in the file.
