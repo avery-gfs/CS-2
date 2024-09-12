@@ -43,7 +43,7 @@ for y in range(im.height):
 output.save("output.jpg")
 ```
 
-![demo.jpg](color channel demo)
+![color channel demo](demo.jpg)
 
 ## Starter Code
 
