@@ -3,11 +3,12 @@
 - What are colors?
 - Pixels https://en.wikipedia.org/wiki/Pixel#/media/File:Pixel_geometry_01_Pengo.jpg
 - Image coordinate system
-- RGB color model https://colorpicker.me/
+- RGB color model https://hslpicker.com/
 - Pillow library: https://pillow.readthedocs.io/en/stable/reference/Image.html
 - How many colors are there?
 - Grayscale and luminance https://en.wikipedia.org/wiki/Grayscale
 - Color distance
+- Demo: color channel manipulation
 - HSL color model / conversion
 - Dithering https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 - Kernels and convolution https://setosa.io/ev/image-kernels/
@@ -17,12 +18,18 @@
   ```py
   from PIL import Image
 
-  im = Image.open("bird.png") # load input image
+  im = Image.open("bird.jpg") # load input image
   output = Image.new(im.mode, im.size) # make blank output image with same dimension as input
 
-  # your code here
+  for y in range(im.height):
+    for x in range(im.width):
+      (r, g, b) = im.getpixel((x, y))
 
-  output.save("output.png") # save output image
+      # your code here
+
+      output.putpixel((x, y), (r, r, r))
+
+  output.save("output.jpg") # save output image
   ```
 
 - Dimensions
@@ -35,7 +42,7 @@
 - Grayscale
 
   ```py
-  im = Image.open("bird.png") # load input image in grayscale
+  im = Image.open("bird.jpg") # load input image in grayscale
   ```
 
 - Get pixel value:
@@ -59,7 +66,7 @@
   ```py
   from PIL import Image
 
-  im = Image.open("bird.png")
+  im = Image.open("bird.jpg")
   output = Image.new(im.mode, im.size)
 
   # Identity kernel, doesn't to anything
@@ -89,7 +96,7 @@
 
       output.putpixel((x, y), (round(newR), round(newG), round(newB)))
 
-  output.save("output.png")
+  output.save("output.jpg")
   ```
 
 ## Problems
