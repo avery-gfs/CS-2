@@ -30,7 +30,7 @@ output.save("output.jpg")
 
 ```
 
-![color channel demo](demo.jpg)
+![color channel demo](demo.png)
 
 ## Starter Code
 
