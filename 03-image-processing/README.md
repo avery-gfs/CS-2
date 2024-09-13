@@ -85,3 +85,33 @@ Write a program to rotate an image `n` degrees about its center.
 Write a program that increases an image's saturation to the maximum amount.
 
 Write a program that shift an image's hue by a certain number of degrees in HSL.
+
+## Concepts (Advanced)
+
+- Color quantization https://en.wikipedia.org/wiki/Color_quantization
+- Dithering https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
+- Kernels and convolution https://setosa.io/ev/image-kernels/
+
+## Problems (Advanced)
+
+Choose a color palette of 8 colors. Write a program that converts an image to use this color palette by finding the closest color in the palette to each color in the input image.
+
+Write a program that generates a color palette for an image automatically using k-means clustering.
+
+----
+
+*You should work in grayscale for the following problems*.
+
+```py
+im = Image.open("bird.jpg").convert("L") # load input image in grayscale
+
+l = im.getpixel((x, y)) # (grayscale image) get lightness value at position x, y
+
+im.putpixel((x, y), l) # (grayscale image) set lightness value at position x, y
+```
+
+Write a program that sharpens an image with the sharpen kernel. https://en.wikipedia.org/wiki/Kernel_(image_processing)#External_links
+
+Write a program that performs random dithering.
+
+Write a program that performs Floyd-Steinberg dithering.
