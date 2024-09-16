@@ -11,25 +11,6 @@
 - Demo: color channel manipulation
 - HSL color model / conversion
 
-## Demo: Color Channel Manipulation
-
-```py
-from PIL import Image
-
-im = Image.open("bird.jpg")
-output = Image.new(im.mode, im.size)
-
-for y in range(im.height):
-  for x in range(im.width):
-    (r, g, b) = im.getpixel((x, y))
-
-    # convert colors to red-only
-    output.putpixel((x, y), (r, 0, 0))
-
-output.save("output.jpg")
-
-```
-
 ![color channel demo](demo.png)
 
 ## Starter Code
@@ -39,7 +20,7 @@ output.save("output.jpg")
   ```py
   from PIL import Image
 
-  im = Image.open("bird.jpg") # load input image
+  im = Image.open("bird.png") # load input image
   output = Image.new(im.mode, im.size) # make blank output image with same dimension as input
 
   for y in range(im.height):
@@ -50,7 +31,7 @@ output.save("output.jpg")
 
       output.putpixel((x, y), (r, g, b))
 
-  output.save("output.jpg") # save output image
+  output.save("output.png") # save output image
   ```
 
 - Dimensions
@@ -101,7 +82,7 @@ output.save("output.jpg")
 *You should work in grayscale for the following problems*.
 
 ```py
-im = Image.open("bird.jpg").convert("L") # load input image in grayscale
+im = Image.open("bird.png").convert("L") # load input image in grayscale
 
 l = im.getpixel((x, y)) # (grayscale image) get lightness value at position x, y
 
