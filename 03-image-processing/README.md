@@ -11,7 +11,7 @@
 
 ## Demo: Color Channel Manipulation
 
-This demo preserves the colors for pixels that are "red-ish" (more red than blue or green), and sets the other pixels to grayscale. In the demo image below, we see that the reds and yellows in the bird are preserved, while the blue and green of the background are removed.
+This demo preserves the colors for pixels that are "red-ish" (more red than blue or green), and sets the other pixels to grayscale. In the demo image below, we see that the reds and yellows in the bird are preserved, while the blues and greens of the background are removed.
 
 ```py
 from PIL import Image
@@ -90,7 +90,7 @@ output.save("output.png")
 
 ## Concepts (Advanced)
  
-- HSL color model / conversion https://hslpicker.com/ https://en.wikipedia.org/wiki/HSL_and_HSV
+- HSL color model / conversion https://hslpicker.com/ and https://en.wikipedia.org/wiki/HSL_and_HSV
 - Color quantization https://en.wikipedia.org/wiki/Color_quantization
 - Dithering https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 - Kernels and convolution https://setosa.io/ev/image-kernels/
