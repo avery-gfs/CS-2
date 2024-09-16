@@ -96,7 +96,7 @@ output.save("output.jpg")
 
 **Quanitzation:** Choose a color palette of 8 colors. Write a program that converts an image to use this color palette by finding the closest color in the palette to each color in the input image.
 
-**K-Means:** Write a program that generates a color palette for an image automatically using k-means clustering.
+**K-Means:** Write a program that generates a color palette for an image automatically using k-means clustering. https://en.wikipedia.org/wiki/K-means_clustering
 
 *You should work in grayscale for the following problems*.
 
@@ -108,7 +108,9 @@ l = im.getpixel((x, y)) # (grayscale image) get lightness value at position x, y
 im.putpixel((x, y), l) # (grayscale image) set lightness value at position x, y
 ```
 
-**Sharpen Kernel:** Write a program that sharpens an image with the sharpen kernel. https://en.wikipedia.org/wiki/Kernel_(image_processing)#External_links
+**Sharpen Kernel:** Write a program that sharpens an image with the sharpen kernel. https://en.wikipedia.org/wiki/Kernel_(image_processing)
+
+**Edges Kernel:** Write a program that finds the edges in an image using the Sobel filter. https://en.wikipedia.org/wiki/Sobel_operator
 
 **Random Dither:** Write a program that performs random dithering.
 
