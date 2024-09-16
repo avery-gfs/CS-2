@@ -1,15 +1,14 @@
 ## Concepts
 
-- What are colors?
+- What are colors? https://en.wikipedia.org/wiki/Color
 - Pixels https://en.wikipedia.org/wiki/Pixel#/media/File:Pixel_geometry_01_Pengo.jpg
-- Image coordinate system
+- Image coordinate system https://dsp.stackexchange.com/questions/35925/why-do-we-use-the-top-left-corner-as-the-origin-in-image-processing
 - RGB color model https://hslpicker.com/
 - How many colors are there?
 - Grayscale and luminance https://en.wikipedia.org/wiki/Grayscale
-- Color distance
+- Color distance https://en.wikipedia.org/wiki/Color_difference#sRGB
 - Pillow library: https://pillow.readthedocs.io/en/stable/reference/Image.html
-- Demo: color channel manipulation
-- HSL color model / conversion
+- HSL color model / conversion https://en.wikipedia.org/wiki/HSL_and_HSV
 
 ![color channel demo](demo.png)
 
