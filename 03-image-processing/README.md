@@ -74,17 +74,17 @@ output.save("output.jpg")
 
 ## Problems
 
-Write a program to convert an image to grayscale.
+**Grayscale:** Write a program to convert an image to grayscale.
 
-Write a program to convert an image to black-and-white.
+**Black and White:** Write a program to convert an image to black-and-white.
 
-Write a program to convert any non-red pixels (pixels that are more green or blue than they are red) to grayscale.
+**Color Channels:** Write a program to convert any non-red pixels (pixels that are more green or blue than they are red) to grayscale.
 
-Write a program to rotate an image `n` degrees about its center.
+**Transformation:** Write a program to rotate an image `n` degrees about its center.
 
-Write a program that increases an image's saturation to the maximum amount.
+**Saturation:** Write a program that increases an image's saturation to the maximum amount.
 
-Write a program that shift an image's hue by a certain number of degrees in HSL.
+**Hue:** Write a program that shift an image's hue by a certain number of degrees in HSL.
 
 ## Concepts (Advanced)
 
@@ -94,11 +94,9 @@ Write a program that shift an image's hue by a certain number of degrees in HSL.
 
 ## Problems (Advanced)
 
-Choose a color palette of 8 colors. Write a program that converts an image to use this color palette by finding the closest color in the palette to each color in the input image.
+**Quanitzation:** Choose a color palette of 8 colors. Write a program that converts an image to use this color palette by finding the closest color in the palette to each color in the input image.
 
-Write a program that generates a color palette for an image automatically using k-means clustering.
-
-----
+**K-Means:** Write a program that generates a color palette for an image automatically using k-means clustering.
 
 *You should work in grayscale for the following problems*.
 
@@ -110,8 +108,8 @@ l = im.getpixel((x, y)) # (grayscale image) get lightness value at position x, y
 im.putpixel((x, y), l) # (grayscale image) set lightness value at position x, y
 ```
 
-Write a program that sharpens an image with the sharpen kernel. https://en.wikipedia.org/wiki/Kernel_(image_processing)#External_links
+**Sharpen Kernel:** Write a program that sharpens an image with the sharpen kernel. https://en.wikipedia.org/wiki/Kernel_(image_processing)#External_links
 
-Write a program that performs random dithering.
+**Random Dither:** Write a program that performs random dithering.
 
-Write a program that performs Floyd-Steinberg dithering.
+**Good Dither:** Write a program that performs Floyd-Steinberg dithering.

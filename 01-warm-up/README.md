@@ -1,17 +1,17 @@
-1. Print out your name.
+**Printing**: Print out your name.
 
 ```py
 print("Avery")
 ```
 
-2. Store your name in a variable and print it out.
+**Variables:** Store your name in a variable and print it out.
 
 ```py
 name = "Avery"
 print(name)
 ```
 
-3. Get a name as input and print out "Hello (name)".
+**Input:** Get a name as input and print out "Hello (name)".
 
 ```py
 name = input("Enter your name: ")
@@ -32,7 +32,7 @@ name = input("Enter your name: ")
 print(f"Hello {name}")
 ```
 
-4. Get a number as input and print out "positive", "negative", or "zero" depending on the sign of the number.
+**Conditionals:** Get a number as input and print out "positive", "negative", or "zero" depending on the sign of the number.
 
 ```py
 num = float(input("Enter a number: "))
@@ -45,7 +45,7 @@ else:
    print("zero")
 ```
 
-5. Get two numbers as input. Print "ok" if one of the numbers is odd (but not both). Print "nope" otherwise.
+**Logic:** Get two numbers as input. Print "ok" if one of the numbers is odd (but not both). Print "nope" otherwise.
 
 ```py
 a = int(input("Enter a number: "))
