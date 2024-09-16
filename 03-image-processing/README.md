@@ -63,7 +63,7 @@ output.save("output.png")
 
   ```py
   im.height # image height in pixels
-  im.width # image height in pixels
+  im.width # image width in pixels
   ```
 
 - Get pixel value:
