@@ -3,12 +3,38 @@
 - What are colors? https://en.wikipedia.org/wiki/Color
 - Pixels https://en.wikipedia.org/wiki/Pixel#/media/File:Pixel_geometry_01_Pengo.jpg
 - Image coordinate system https://dsp.stackexchange.com/questions/35925/why-do-we-use-the-top-left-corner-as-the-origin-in-image-processing
-- RGB color model https://hslpicker.com/
+- RGB color model https://rgbcolorpicker.com/
 - How many colors are there?
 - Grayscale and luminance https://en.wikipedia.org/wiki/Grayscale
 - Color distance https://en.wikipedia.org/wiki/Color_difference#sRGB
 - Pillow library: https://pillow.readthedocs.io/en/stable/reference/Image.html
-- HSL color model / conversion https://en.wikipedia.org/wiki/HSL_and_HSV
+
+## Demo: Color Channel Manipulation
+
+This demo preserves the colors for pixels that are "red-ish" (more red than blue or green), and sets the other pixels to grayscale. In the demo image below, we see that the reds and yellows in the bird are preserved, while the blue and green of the background are removed.
+
+```py
+from PIL import Image
+
+im = Image.open("bird.png")
+output = Image.new(im.mode, im.size)
+
+for y in range(im.height):
+  for x in range(im.width):
+    (r, g, b) = im.getpixel((x, y))
+
+    if (r > g and r > b):
+      pass
+    else:
+      l = round((r + g + b) / 3)
+      r = l
+      g = l
+      b = l
+
+    output.putpixel((x, y), (r, g, b))
+
+output.save("output.png")
+```
 
 ![color channel demo](demo.png)
 
@@ -67,7 +93,8 @@
 **Hue:** Write a program that shift an image's hue by a certain number of degrees in HSL.
 
 ## Concepts (Advanced)
-
+ 
+- HSL color model / conversion https://hslpicker.com/ https://en.wikipedia.org/wiki/HSL_and_HSV
 - Color quantization https://en.wikipedia.org/wiki/Color_quantization
 - Dithering https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 - Kernels and convolution https://setosa.io/ev/image-kernels/
