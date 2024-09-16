@@ -84,13 +84,9 @@ output.save("output.png")
 
 **Black and White:** Write a program to convert an image to black-and-white.
 
-**Color Channels:** Write a program to convert any non-red pixels (pixels that are more green or blue than they are red) to grayscale.
+**Color Channels:** Write a program to convert any green-ish pixels (pixels that are more green than they are red or blue) to grayscale.
 
 **Transformation:** Write a program to rotate an image `n` degrees about its center.
-
-**Saturation:** Write a program that increases an image's saturation to the maximum amount.
-
-**Hue:** Write a program that shift an image's hue by a certain number of degrees in HSL.
 
 ## Concepts (Advanced)
  
@@ -100,6 +96,10 @@ output.save("output.png")
 - Kernels and convolution https://setosa.io/ev/image-kernels/
 
 ## Problems (Advanced)
+
+**Saturation:** Write a program that increases an image's saturation to the maximum amount.
+
+**Hue:** Write a program that shift an image's hue by a certain number of degrees in HSL.
 
 **Quanitzation:** Choose a color palette of 8 colors. Write a program that converts an image to use this color palette by finding the closest color in the palette to each color in the input image.
 
