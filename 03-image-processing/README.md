@@ -78,6 +78,8 @@ output.save("output.png")
 
 ## Problems
 
+**Invert:** Write a program to invert the colors for each pixel in an image.
+
 **Grayscale:** Write a program to convert an image to grayscale.
 
 **Black and White:** Write a program to convert an image to black-and-white.
