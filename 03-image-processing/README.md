@@ -23,9 +23,7 @@ for y in range(im.height):
   for x in range(im.width):
     (r, g, b) = im.getpixel((x, y))
 
-    if (r > g and r > b):
-      pass
-    else:
+    if (r < g or r < b):
       l = round((r + g + b) / 3)
       r = l
       g = l
