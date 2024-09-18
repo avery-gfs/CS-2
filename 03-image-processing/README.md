@@ -36,26 +36,7 @@ output.save("output.png")
 
 ![color channel demo](demo.png)
 
-## Starter Code
-
-- Setup
-
-  ```py
-  from PIL import Image
-
-  im = Image.open("bird.png") # load input image
-  output = Image.new(im.mode, im.size) # make blank output image with same dimension as input
-
-  for y in range(im.height):
-    for x in range(im.width):
-      (r, g, b) = im.getpixel((x, y))
-
-      # your code here
-
-      output.putpixel((x, y), (r, g, b))
-
-  output.save("output.png") # save output image
-  ```
+## PIL API
 
 - Dimensions
 
@@ -77,6 +58,8 @@ output.save("output.png")
   ```
 
 ## Problems
+
+You can use the code in [template.py](template.py) as a starting point for these problems.
 
 **Invert:** Write a program to invert the colors for each pixel in an image.
 
