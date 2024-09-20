@@ -57,6 +57,15 @@ output.save("output.png")
   im.putpixel((x, y), (r, g, b)) # set rgb values at position x, y
   ```
 
+- Use the [`colorsys`](https://docs.python.org/3/library/colorsys.html) module to convert between RGB and HSL.
+
+```py
+import colorsys # put this at the top of your code along with the PIL import
+
+(h, s, l) = colorsys.rgb_to_hls(r, g, b) # get HSL from RGB
+(r, g, b) = colorsys.hls_to_rgb(h, l, s) # get RGB from HSL
+```
+
 ## Problems
 
 You can use the code in [template.py](template.py) as a starting point for these problems.
@@ -73,12 +82,14 @@ You can use the code in [template.py](template.py) as a starting point for these
 
 ## Concepts (Advanced)
  
-- HSL color model / conversion https://hslpicker.com/ and https://en.wikipedia.org/wiki/HSL_and_HSV
+- HSL color model https://hslpicker.com/ and https://en.wikipedia.org/wiki/HSL_and_HSV
 - Color quantization https://en.wikipedia.org/wiki/Color_quantization
 - Dithering https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 - Kernels and convolution https://setosa.io/ev/image-kernels/
 
 ## Problems (Advanced)
+
+*You should use the `colorsys` Python module to convert between RGB and HSL for the saturation and hue problems (see notes above).*
 
 **Saturation:** Write a program that increases an image's saturation to the maximum amount.
 
