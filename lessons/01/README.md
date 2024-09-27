@@ -30,18 +30,18 @@ isinstance(l, int)  # false
 import math
 
 class Point:
-  def __init__(self, x, y): # __init__ defines how a new point is created
-    self.x = x # store x as a field on the new Point object 
-    self.y = y # store y as a field on the new Point object
+	def __init__(self, x, y): # __init__ defines how a new point is created
+		self.x = x # store x as a field on the new Point object 
+		self.y = y # store y as a field on the new Point object
 
-  def __repr__(self): # __repr__
-    return f"Point({self.x}, {self.y})"
+	def __repr__(self): # __repr__
+		return f"Point({self.x}, {self.y})"
 
-  def distanceTo(self, other): # custom method
-    # calculates the distance between self and other
-    dx = self.x - other.x # calc difference between x of self and other
-    dy = self.y - other.y # calc difference between y of self and other
-    return math.sqrt(dx ** 2 + dy ** 2) # distance formula
+	def distanceTo(self, other): # custom method
+		# calculates the distance between self and other
+		dx = self.x - other.x # calc difference between x of self and other
+		dy = self.y - other.y # calc difference between y of self and other
+		return math.sqrt(dx ** 2 + dy ** 2) # distance formula
 
 p = Point(3, 4)
 
@@ -51,5 +51,4 @@ p.y # 4
 
 o = Point(0, 0)
 p.distanceTo(o) # 5
-
 ```
