@@ -30,7 +30,7 @@ h = Height(5, 11)
 print(h.addInches(4))
 ```
 
-Notice that `addInches` doesn't update the `self.inches` field of the current object; instead 
+Notice that `addInches` doesn't update the `self.inches` field of the current object; instead
 it creates a new object with the inches added in. This is an example of **immutable** class design, where
 the methods of an object don't change the existing object, but instead create a new object.
 
@@ -137,7 +137,7 @@ for y in range(im.height):
 output.save("output.png")
 ```
 
-![color channel demo](demo.png)
+![color channel demo](materials/images/demo.png)
 
 #### PIL API
 
@@ -171,7 +171,7 @@ import colorsys # put this at the top of your code along with the PIL import
 
 #### Practice
 
-[practice/images/practice.py](practice/images/practice.py)
+[materials/images/practice.py](materials/images/practice.py)
 
 ---
 
@@ -203,7 +203,7 @@ TO DO: make cheatsheet
 
 #### Practice
 
-[practice/review/practice.py](practice/review/practice.py)
+[materials/review/practice.py](materials/review/practice.py)
 
 ---
 
