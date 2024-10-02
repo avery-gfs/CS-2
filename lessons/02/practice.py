@@ -1,7 +1,7 @@
 # A class representing a time with some number of hours and minutes
 
 class Time:
-    def __init__(self):
+    def __init__(self, hours, minutes):
         # Add code to add hours and minutes fields to Time
         pass
 
