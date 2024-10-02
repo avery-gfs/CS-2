@@ -3,6 +3,8 @@
 class Time:
     def __init__(self, hours, minutes):
         # Add code to add hours and minutes fields to Time
+        # Make sure to adjust hours and minutes
+        # when minutes > 60
         pass
 
     def __repr__(self):
@@ -16,11 +18,6 @@ class Time:
     def addMinutes(self, minutes):
         # Add code to make a new Time object with additional minutes
         return Time(0, 0)
-
-    def fix(self):
-        # Edit this Time object to update hours and minutes
-        # when minutes > 60
-        pass
 
 print(Time(10, 15).hours == 10)
 
@@ -41,13 +38,3 @@ print(Time(1, 15).addMinutes(5).minutes == 20)
 print(Time(1, 15).addMinutes(65).minutes == 20)
 
 print(Time(1, 15).addMinutes(65).hours == 2)
-
-print(Time(1, 65).minutes == 5)
-
-print(Time(1, 125).minutes == 5)
-
-print(Time(1, 65).hours == 2)
-
-print(Time(1, 125).hours == 3)
-
-print(Time(1, 185).hours == 4)
