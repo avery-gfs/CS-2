@@ -8,23 +8,23 @@ more classes
 
 ```py
 class Height:
-	def __init__(self, feet, inches):
-		# Convert excess inches above 11 to feet
-		while inches >= 12:
-			inches -= 12
-			feet += 1
+    def __init__(self, feet, inches):
+        # Convert excess inches above 11 to feet
+        while inches >= 12:
+            inches -= 12
+            feet += 1
 
-		self.feet = feet
-		self.inches = inches
+        self.feet = feet
+        self.inches = inches
 
-	def __repr__(self):
-		# Displays Height(5, 6) as 5'6"
-		return f"{self.feet}'{self.inches}\""
+    def __repr__(self):
+        # Displays Height(5, 6) as 5'6"
+        return f"{self.feet}'{self.inches}\""
 
-	def addInches(self, inches):
-		# Make a new height with inches added on
-		# __init__ will handle the case where the new inches exceed 12
-		return Height(self.feed, self.inches + inches)
+    def addInches(self, inches):
+        # Make a new height with inches added on
+        # __init__ will handle the case where the new inches exceed 12
+        return Height(self.feed, self.inches + inches)
 
 h = Height(5, 11)
 print(h.addInches(4))
@@ -39,7 +39,7 @@ update the existing object instead of returning a new one.
 
 ```py
 def addInches(self, inches):
-	self.inches += inches
+    self.inches += inches
 ```
 
 We'll explore mutable classes later in this course.
@@ -68,22 +68,22 @@ We call methods using the `.` operator in Python, where the object we're calling
 import math
 
 class Point:
-	def __init__(self, x, y): # __init__ defines how a new point is created
-		self.x = x # store x as a field on the new Point object
-		self.y = y # store y as a field on the new Point object
+    def __init__(self, x, y): # __init__ defines how a new point is created
+        self.x = x # store x as a field on the new Point object
+        self.y = y # store y as a field on the new Point object
 
-	def __repr__(self): # __repr__
-		return f"Point({self.x}, {self.y})"
+    def __repr__(self): # __repr__
+        return f"Point({self.x}, {self.y})"
 
-	def originDistance(self): # custom method that takes 0 arguments (not counting self)
-		# calculates the distance from this point to the origin (0, 0)
-		return math.sqrt(self.x ** 2 + self.y ** 2) # distance formula
+    def originDistance(self): # custom method that takes 0 arguments (not counting self)
+        # calculates the distance from this point to the origin (0, 0)
+        return math.sqrt(self.x ** 2 + self.y ** 2) # distance formula
 
-	def distanceTo(self, other): # custom method that takes 1 argument (not counting self)
-		# calculates the distance between self and other
-		dx = self.x - other.x # calc difference between x of self and other
-		dy = self.y - other.y # calc difference between y of self and other
-		return math.sqrt(dx ** 2 + dy ** 2) # distance formula
+    def distanceTo(self, other): # custom method that takes 1 argument (not counting self)
+        # calculates the distance between self and other
+        dx = self.x - other.x # calc difference between x of self and other
+        dy = self.y - other.y # calc difference between y of self and other
+        return math.sqrt(dx ** 2 + dy ** 2) # distance formula
 
 p = Point(3, 4)
 
@@ -123,16 +123,16 @@ im = Image.open("bird.png")
 output = Image.new(im.mode, im.size)
 
 for y in range(im.height):
-	for x in range(im.width):
-		(r, g, b) = im.getpixel((x, y))
+    for x in range(im.width):
+        (r, g, b) = im.getpixel((x, y))
 
-	if (r < g or r < b):
-		l = round((r + g + b) / 3)
-		r = l
-		g = l
-		b = l
+    if (r < g or r < b):
+        l = round((r + g + b) / 3)
+        r = l
+        g = l
+        b = l
 
-	output.putpixel((x, y), (r, g, b))
+    output.putpixel((x, y), (r, g, b))
 
 output.save("output.png")
 ```
