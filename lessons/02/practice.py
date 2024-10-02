@@ -11,16 +11,16 @@ class Time:
 
     def addHours(self, hours):
         # Add code to make a new Time object with additional hours
-        return None
+        return Time(0, 0)
 
     def addMinutes(self, minutes):
         # Add code to make a new Time object with additional minutes
-        return None
+        return Time(0, 0)
 
     def fix(self):
-        # Add code to return a new Time object with hours and minutes
-        # adjusted when minutes > 60
-        return None
+        # Edit this Time object to update hours and minutes
+        # when minutes > 60
+        pass
 
 print(Time(10, 15).hours == 10)
 
