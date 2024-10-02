@@ -42,12 +42,12 @@ print(Time(1, 15).addMinutes(65).minutes == 20)
 
 print(Time(1, 15).addMinutes(65).hours == 2)
 
-print(Time(1, 65).fix().minutes == 5)
+print(Time(1, 65).minutes == 5)
 
-print(Time(1, 125).fix().minutes == 5)
+print(Time(1, 125).minutes == 5)
 
-print(Time(1, 65).fix().hours == 2)
+print(Time(1, 65).hours == 2)
 
-print(Time(1, 125).fix().hours == 3)
+print(Time(1, 125).hours == 3)
 
-print(Time(1, 185).fix().hours == 4)
+print(Time(1, 185).hours == 4)
