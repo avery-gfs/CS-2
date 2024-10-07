@@ -1,8 +1,56 @@
-mutable classes: to-do list
-
 immutable time
 more methods
 more classes
+
+## More Methods
+
+- `__add__`
+- `__sub__`
+- `__eq__`
+- `__lt__`, `__le__`
+
+```py
+class Height:
+    def __init__(self, feet, inches):
+        # Convert excess inches above 11 to feet
+        while inches >= 12:
+            inches -= 12
+            feet += 1
+
+        self.feet = feet
+        self.inches = inches
+
+    def __repr__(self):
+        # Displays Height(5, 6) as 5'6"
+        return f"{self.feet}'{self.inches}\""
+
+    def totalInches(self):
+        return self.feet * 12 + self.inches
+
+    def __add__(self, inches):
+        # Make a new height with inches added on
+        # __init__ will handle the case where the new inches exceed 12
+        return Height(self.feet, self.inches + inches)
+
+    def __sub__(self, inches):
+        return self.__add__(-inches)
+
+    def __eq__(self, other):
+        return self.feet == other.feet and self.inches == other.inches
+
+    def __lt__(self, other):
+        return self.totalInches() < other.totalInches()
+
+    def __le__(self, other):
+        return self.totalInches() <= other.totalInches()
+
+h = Height(5, 11)
+print(h + 4) # 6'3"
+print(h == Height(5, 5) + 6) # True
+print(h < Height(6, 0)) # True
+```
+
+---
 
 ## Immutable Classes
 
@@ -24,7 +72,7 @@ class Height:
     def addInches(self, inches):
         # Make a new height with inches added on
         # __init__ will handle the case where the new inches exceed 12
-        return Height(self.feed, self.inches + inches)
+        return Height(self.feet, self.inches + inches)
 
 h = Height(5, 11)
 print(h.addInches(4))
