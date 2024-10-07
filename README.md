@@ -33,7 +33,7 @@ class Height:
         return Height(self.feet, self.inches + inches)
 
     def __sub__(self, inches):
-        return self.__add__(-inches)
+        return Height(self.feet, self.inches - inches)
 
     def __eq__(self, other):
         return self.feet == other.feet and self.inches == other.inches
