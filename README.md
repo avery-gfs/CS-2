@@ -1,7 +1,8 @@
-
 ## Internal Representations:
 
-We don't have to use the variables that we get from the user in the `__init__` method. For example, we can keep track of `totalInches` internally, instead of `feet` and `inches` separately, which can simplify our code.
+We don't have to use the variables that we get from the user in the `__init__`
+method. For example, we can keep track of `totalInches` internally, instead of
+`feet` and `inches` separately, which can simplify our code.
 
 ```py
 class Height:
@@ -38,7 +39,8 @@ print(h < Height(6, 0)) # True
 
 Python has a special syntax that allows `if` and `else` to be used as
 expressions, meaning that they can be used on the right-hand side of a variable
-definition. See details here: https://docs.python.org/3/reference/expressions.html#conditional-expressions
+definition. See details here:
+https://docs.python.org/3/reference/expressions.html#conditional-expressions
 
 So, intead of writing this:
 
@@ -54,19 +56,6 @@ You could write this:
 ```py
 hoursStr = "12" if self.hours == 0 else str(self.hours)
 ```
-
-## What is `self`
-
-Linus had a nice explaination for the `self` keyword the other day in class:
-
-> When we make an object in Python and assign it to a variable, we can use that
-> variable name to access the fields and methods of the object. For example, if
-> we made a new `Point` object `p = Point(5, 0)` then we can access `p.x`,
-> `p.y`, `p.distanceTo(...)`, etc. But when we write methods for the `Point`
-> class, we don't know ahead of time what our point variable going to be named,
-> so we have to use a special placeholder name (`self`), instead.
-
-what is self? if expressions weirdness around 12 internal representations
 
 ## What is `self`
 
