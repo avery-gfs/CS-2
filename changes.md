@@ -11,3 +11,4 @@ Changes for next time:
   metric)
 - Use `Duration` for the demo class (instead of `Time`) to (12 <-> 0) quirkiness
 - Add tests to handle negative values
+- Use 4 spaces for code (to match idle)
