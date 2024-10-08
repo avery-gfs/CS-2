@@ -296,8 +296,6 @@ import colorsys # put this at the top of your code along with the PIL import
 
 ## Review
 
-TO DO: make cheatsheet
-
 - Printing
 - User input
 - Primitives: booleans, numbers (ints and floats), strings, `none`
