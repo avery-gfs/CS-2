@@ -138,7 +138,7 @@ class Height:
 
     def __repr__(self):
         # Displays Height(5, 6) as 5'6"
-        return f"{self.feet}'{self.inches}\""
+        return f"{self.feet}'{self.inches}\"" # Need to escape double quote
 
     def addInches(self, inches):
         # Make a new height with inches added on
