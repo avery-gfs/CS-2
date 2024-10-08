@@ -1,7 +1,11 @@
 Changes for next time:
 
 - Python cheatsheet
-- Fix image dimensions
+- Fix bird image dimensions
+- Remove advanced material from image lesson
+- Move image practice problems into code
+- Use single script for image problems
+- Use separate output files for image problems
 - Use `Circle` and `Rectangle` as demo and assignment for custom classes intro
 - Use `Height` as the assignment class, not the demo class (so we can extend to
   metric)
