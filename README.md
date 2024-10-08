@@ -66,9 +66,7 @@ Linus had a nice explaination for the `self` keyword the other day in class:
 > we made a new `Point` object `p = Point(5, 0)` then we can access `p.x`,
 > `p.y`, `p.distanceTo(...)`, etc. But when we write methods for the `Point`
 > class, we don't know ahead of time what our point variable going to be named,
-> so we have to use a special placeholder name (`self`), instead.
-
-what is self? if expressions weirdness around 12 internal representations
+> so we have to use a special placeholder name `self`, instead.
 
 ## Math Methods
 
