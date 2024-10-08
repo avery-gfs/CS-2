@@ -64,9 +64,9 @@ Linus had a nice explaination for the `self` keyword the other day in class:
 > When we make an object in Python and assign it to a variable, we can use that
 > variable name to access the fields and methods of the object. For example, if
 > we made a new `Point` object `p = Point(5, 0)` then we can access `p.x`,
-> `p.y`, `p.distanceTo(...)`, etc. But when we write methods for the `Point`
+> `p.y`, `p.distanceTo(...)`, etc. **But** when we write methods for the `Point`
 > class, we don't know ahead of time what our point variable going to be named,
-> so we have to use a special placeholder name `self`, instead.
+> so we have to use the special placeholder name `self` instead.
 
 ## Math Methods
 
