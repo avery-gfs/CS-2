@@ -250,11 +250,11 @@ for y in range(im.height):
     for x in range(im.width):
         (r, g, b) = im.getpixel((x, y))
 
-    if (r < g or r < b):
-        l = round((r + g + b) / 3)
-        r = l
-        g = l
-        b = l
+        if (r < g or r < b):
+            l = round((r + g + b) / 3)
+            r = l
+            g = l
+            b = l
 
     output.putpixel((x, y), (r, g, b))
 
