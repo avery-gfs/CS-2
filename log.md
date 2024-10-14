@@ -22,3 +22,4 @@ Changes for next time:
   quirkiness
 - Add tests to handle negative values
 - Use 4 spaces for code (to match idle)
+- Less focus on math methods
