@@ -6,11 +6,11 @@
 | if expressions      |     |     |
 | to do list          |     |     |
 | json to do list     |     |     |
-| climate     |     |     |
-| spell checker     |     |     |
-| ghost     |     |     |
-| probability     |     |     |
-| web api set |     |     |
+| climate             |     |     |
+| spell checker       |     |     |
+| ghost               |     |     |
+| probability         |     |     |
+| web api set         |     |     |
 
 Changes for next time:
 
@@ -31,3 +31,4 @@ Changes for next time:
 - Less focus on math methods
 - Open ended / choose a project time
 - Make tests print out values, not just comparison results
+- More sparing with test cases
