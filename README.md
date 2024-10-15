@@ -126,7 +126,7 @@ class Height:
         return Height(self.feet, self.inches - inches)
 
     def __eq__(self, other):
-        return self.feet == other.feet and self.inches == other.inches
+        return self.totalInches() == self.otherInches()
 
     def __lt__(self, other):
         return self.totalInches() < other.totalInches()

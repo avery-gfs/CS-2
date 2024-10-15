@@ -1,6 +1,6 @@
 | Topic               | 1   | 2   |
 | ------------------- | --- | --- |
-| math methods start  | x   |     |
+| math methods start  | x   | x   |
 | math methods finish |     |     |
 | zero/twelve issue   |     |     |
 | if expressions      |     |     |
@@ -20,6 +20,7 @@ Changes for next time:
   extend to metric)
 - Maybe use `Duration` for the demo class (instead of `Time`) to (12 <-> 0)
   quirkiness
+- Actually time is good, but hold off on am/pm until we change the internal rep
 - Add tests to handle negative values
 - Use 4 spaces for code (to match idle)
 - Less focus on math methods
