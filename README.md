@@ -1,38 +1,46 @@
 ## Internal Representations:
 
 We don't have to use the variables that we get from the user in the `__init__`
-method. For example, we can keep track of `totalInches` internally, instead of
-`feet` and `inches` separately, which can simplify our code.
+method. For example, we can keep track of `totalMinutes` internally, instead of
+`hours`, `minutes`, and `ampm` separately, which can simplify our code.
 
 ```py
-class Height:
-    def __init__(self, feet, inches):
-        self.totalInches = feet * 12 + inches
+class Time:
+    def __init__(self, hours, minutes, ampm):
+        if hours == 12:
+            hours = 0
+
+        self.totalMinutes = hours * 60 + minutes
+
+        if ampm == "pm":
+            self.totalMinutes += 12 * 60 # minutes in 12 hours
+
+        self.totalMinutes %= (24 * 60) # minutes in a day
 
     def __repr__(self):
-        inches = self.totalInches % 12
-        feet = self.totalInches // 12
-        return f"{feet}'{inches}\""
+        minutes = self.totalMinutes % 60
+        hours = (self.totalMinutes // 60) % 12
+        ampm = "pm" if self.totalMinutes > 12 * 60 else "am"
 
-    def __add__(self, inches):
-        return Height(0, self.totalInches + inches)
+        hoursStr = "12" if hours == 0 else str(hours)
+        minutesStr = "0" + str(minutes) if minutes < 10 else str(minutes)
 
-    def __sub__(self, inches):
-        return Height(0, self.totalInches - inches)
+        return f"{hoursStr}:{minutesStr}{ampm}"
+
+    def __add__(self, minutes):
+        return Time(0, self.totalMinutes + minutes, "am")
+
+    def __sub__(self, minutes):
+        return Time(0, self.totalMinutes - minutes, "am")
 
     def __eq__(self, other):
-        return self.totalInches == other.totalInches
+        return self.totalMinutes == other.totalMinutes
 
     def __lt__(self, other):
-        return self.totalInches < other.totalInches
+        return self.totalMinutes < other.totalMinutes
 
     def __le__(self, other):
-        return self.totalInches <= other.totalInches
-
-h = Height(5, 11)
-print(h + 4) # 6'3"
-print(h == Height(5, 5) + 6) # True
-print(h < Height(6, 0)) # True
+        return self.totalMinutes <= other.totalMinutes
 ```
 
 ## If Expressions:

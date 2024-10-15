@@ -4,8 +4,13 @@
 | math methods finish |     |     |
 | zero/twelve issue   |     |     |
 | if expressions      |     |     |
-| internal reps       |     |     |
 | to do list          |     |     |
+| json to do list     |     |     |
+| climate     |     |     |
+| spell checker     |     |     |
+| ghost     |     |     |
+| probability     |     |     |
+| web api set |     |     |
 
 Changes for next time:
 
@@ -24,3 +29,5 @@ Changes for next time:
 - Add tests to handle negative values
 - Use 4 spaces for code (to match idle)
 - Less focus on math methods
+- Open ended / choose a project time
+- Make tests print out values, not just comparison results
