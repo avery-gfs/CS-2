@@ -65,7 +65,7 @@ class Time:
 
     def __eq__(self, other):
         # Add code to compare two times (use totalMinutes)
-        return self.hours == other.hours and self.minutes == other.minutes and self.ampm == other.ampm
+        return self.totalMinutes() == other.totalMinutes()
 
     def __lt__(self, other):
         # Add code to compare two times (use totalMinutes)
