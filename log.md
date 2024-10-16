@@ -1,9 +1,9 @@
 | Topic               | 1   | 2   |
 | ------------------- | --- | --- |
 | math methods start  | x   | x   |
-| math methods finish |     |     |
-| zero/twelve issue   |     |     |
-| if expressions      |     |     |
+| math methods finish | x   | x   |
+| zero/twelve issue   | x   | x   |
+| if expressions      | x   | x   |
 | to do list          |     |     |
 | json to do list     |     |     |
 | climate             |     |     |
