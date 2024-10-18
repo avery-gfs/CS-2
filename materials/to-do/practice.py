@@ -5,12 +5,12 @@ class Task:
         pass
 
     def __repr__(self):
-        # Display the name and status of a task
+        # Display the name and status of task
         return f""
 
 class TodoList:
     def __init__(self):
-        # Keep track of tasks list, which starts out empty
+        # Keep track of a tasks list, which starts out empty
         pass
 
     def addTask(self, name):
@@ -26,7 +26,7 @@ class TodoList:
         pass
 
     def __repr__(self):
-        # Return a representation of the task list that
+        # Return a representation of the to do list that
         # shows each task (name and status), the total number
         # of tasks, and the number of undone tasks
         result = ""
