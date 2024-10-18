@@ -1,3 +1,99 @@
+## Mutable Classes:
+
+```py
+class Player:
+    def __init__(self, name):
+        self.name = name
+        self.baskets = 0
+        self.shots = 0
+
+    def __repr__(self):
+        return f"{self.name} {self.baskets}/{self.shots}"
+
+class Team:
+    def __init__(self):
+        self.players = []
+
+    def addPlayer(self, name):
+        self.players.append(Player(name))
+
+    def addBasket(self, name):
+        for player in self.players:
+            if player.name == name:
+                player.baskets += 1
+                player.shots += 1
+
+    def addMiss(self, name):
+        for player in self.players:
+            if player.name == name:
+                player.shots += 1
+
+    def __repr__(self):
+        numPlayers = len(self.players)
+        totalBaskets = 0
+        totalShots = 0
+        result = ""
+
+        for player in self.players:
+            result += str(player) + "\n"
+            totalBaskets += player.baskets
+            totalShots += player.shots
+
+        result += "-" * 20
+        result += f"\n{numPlayers} players {totalBaskets}/{totalShots} total"
+        return result
+
+team = Team()
+
+team.addPlayer("alex")
+team.addPlayer("marcus")
+
+team.addBasket("marcus")
+team.addBasket("marcus")
+team.addMiss("marcus")
+team.addMiss("alex")
+
+print(team)
+```
+
+Alternatively, we could keep track of the total number of shots and baskets in our `Team` class as we go, instead of having to calculate these in the `__repr__` method.
+
+```py
+class Team:
+    def __init__(self):
+        self.players = []
+        self.totalBaskets = 0
+        self.totalShots = 0
+
+    def addPlayer(self, name):
+        self.players.append(Player(name))
+
+    def addBasket(self, name):
+        for player in self.players:
+            if player.name == name:
+                player.baskets += 1
+                player.shots += 1
+                self.totalBaskets += 1
+                self.totalShots += 1
+
+    def addMiss(self, name):
+        for player in self.players:
+            if player.name == name:
+                player.shots += 1
+                self.totalShots += 1
+
+    def __repr__(self):
+        numPlayers = len(self.players)
+        result = ""
+
+        for player in self.players:
+            result += str(player) + "\n"
+
+        result += "-" * 20
+        result += f"\n{numPlayers} players {self.totalBaskets}/{self.totalShots} total"
+        return result
+```
+
 ## Internal Representations:
 
 We don't have to use the variables that we get from the user in the `__init__`
