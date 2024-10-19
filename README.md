@@ -1,45 +1,58 @@
 ## Mutable Classes:
 
+This example uses two classes, `Player` and `Team`, to keep track of the accuracy of basketball players as individuals and as a team. The methods `addPlayer`, `addBasket`, and `addMiss` update the `Player` and `Team` objects.
+
 ```py
 class Player:
     def __init__(self, name):
         self.name = name
-        self.baskets = 0
-        self.shots = 0
+        self.baskets = 0 # Baskets count starts at 0
+        self.shots = 0 # Shots count starts at 0
 
     def __repr__(self):
+        # Example: "Avery 9/10"
         return f"{self.name} {self.baskets}/{self.shots}"
 
 class Team:
     def __init__(self):
-        self.players = []
+        self.players = [] # List of player objects, starts empty
 
+    # Make a new player with the given name and add to team
     def addPlayer(self, name):
         self.players.append(Player(name))
 
+    # Find the player matching name and update basket and shot count
     def addBasket(self, name):
         for player in self.players:
+            # Find the player with the matching name
             if player.name == name:
+                # Update both shots and baskets for successful shot
                 player.baskets += 1
                 player.shots += 1
 
+    # Find the player matching name and update shot count
     def addMiss(self, name):
         for player in self.players:
+            # Find the player with the matching name
             if player.name == name:
+                # Only update shots for unsuccessful shot
                 player.shots += 1
 
     def __repr__(self):
-        numPlayers = len(self.players)
-        totalBaskets = 0
-        totalShots = 0
-        result = ""
+        numPlayers = len(self.players) # Number of players
+        totalBaskets = 0 # Use to count total baskets
+        totalShots = 0 # Use to count total shots
+        result = "" # Use to build string representation
 
         for player in self.players:
-            result += str(player) + "\n"
+            result += str(player) + "\n" # Call player __repr__ method and add newline
+            # Add players stats to totals
             totalBaskets += player.baskets
             totalShots += player.shots
 
+        # Add divider line
         result += "-" * 20
+        # Add row with summary information
         result += f"\n{numPlayers} players {totalBaskets}/{totalShots} total"
         return result
 
@@ -54,44 +67,6 @@ team.addMiss("marcus")
 team.addMiss("alex")
 
 print(team)
-```
-
-Alternatively, we could keep track of the total number of shots and baskets in our `Team` class as we go, instead of having to calculate these in the `__repr__` method.
-
-```py
-class Team:
-    def __init__(self):
-        self.players = []
-        self.totalBaskets = 0
-        self.totalShots = 0
-
-    def addPlayer(self, name):
-        self.players.append(Player(name))
-
-    def addBasket(self, name):
-        for player in self.players:
-            if player.name == name:
-                player.baskets += 1
-                player.shots += 1
-                self.totalBaskets += 1
-                self.totalShots += 1
-
-    def addMiss(self, name):
-        for player in self.players:
-            if player.name == name:
-                player.shots += 1
-                self.totalShots += 1
-
-    def __repr__(self):
-        numPlayers = len(self.players)
-        result = ""
-
-        for player in self.players:
-            result += str(player) + "\n"
-
-        result += "-" * 20
-        result += f"\n{numPlayers} players {self.totalBaskets}/{self.totalShots} total"
-        return result
 ```
 
 ## Internal Representations:
