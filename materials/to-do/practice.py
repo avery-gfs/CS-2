@@ -36,6 +36,6 @@ todo = TodoList()
 
 # todo.addTask("feed dog")
 # todo.addTask("water plants")
-# todo.setIsDone("dog", True)
+# todo.setIsDone("feed dog", True)
 
 print(todo)
