@@ -1,17 +1,17 @@
 class Task:
     def __init__(self, name):
-        # Keep track of task name and status (done or undone)
-        # Task should start out undone
+        # Keep track of task name and whether the task is done
+        # Task should start out not done
         pass
 
     def __repr__(self):
         # Display the name and status of task
-        return f""
+        return str(self)
 
 class TodoList:
     def __init__(self):
         # Keep track of a tasks list, which starts out empty
-        pass
+        self.tasks = []
 
     def addTask(self, name):
         # Add a new task with a given name
@@ -32,9 +32,7 @@ class TodoList:
         #
         # When ordering the output, show the incomplete tasks
         # before the completed tasks.
-        
-        result = ""
-        return result
+        return str(self.tasks)
 
 todo = TodoList()
 
