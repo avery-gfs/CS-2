@@ -1,6 +1,8 @@
 ## Mutable Classes:
 
-This example uses two classes, `Player` and `Team`, to keep track of the accuracy of basketball players as individuals and as a team. The methods `addPlayer`, `addBasket`, and `addMiss` update the `Player` and `Team` objects.
+This example uses two classes, `Player` and `Team`, to keep track of the
+accuracy of basketball players as individuals and as a team. The methods
+`addPlayer`, `addBasket`, and `addMiss` update the `Player` and `Team` objects.
 
 ```py
 class Player:

@@ -4,6 +4,7 @@
 | math methods finish | x   | x   |
 | zero/twelve issue   | x   | x   |
 | if expressions      | x   | x   |
+| start to do list    | x   |     |
 | to do list          |     |     |
 | json to do list     |     |     |
 | climate             |     |     |
