@@ -28,7 +28,11 @@ class TodoList:
     def __repr__(self):
         # Return a representation of the to do list that
         # shows each task (name and status), the total number
-        # of tasks, and the number of undone tasks
+        # of tasks, and the number of undone tasks.
+        #
+        # When ordering the output, show the incomplete tasks
+        # before the completed tasks.
+        
         result = ""
         return result
 
