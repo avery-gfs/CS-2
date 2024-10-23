@@ -4,8 +4,8 @@
 | math methods finish | x   | x   |
 | zero/twelve issue   | x   | x   |
 | if expressions      | x   | x   |
-| start to do list    | x   |     |
-| to do list          |     |     |
+| start to do list    | x   | x   |
+| finish to do list   |     |     |
 | json to do list     |     |     |
 | climate             |     |     |
 | spell checker       |     |     |
@@ -33,3 +33,4 @@ Changes for next time:
 - Open ended / choose a project time
 - Make tests print out values, not just comparison results
 - More sparing with test cases
+- Add minimal __repr__ placeholder implementations so students can see data in objects
