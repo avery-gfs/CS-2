@@ -5,8 +5,8 @@
 | zero/twelve issue   | x   | x   |
 | if expressions      | x   | x   |
 | start to do list    | x   | x   |
-| finish to do list   |     |     |
-| json to do list     |     |     |
+| finish to do list   | x   | x   |
+| project 1           |     |     |
 | climate             |     |     |
 | spell checker       |     |     |
 | ghost               |     |     |
@@ -33,4 +33,7 @@ Changes for next time:
 - Open ended / choose a project time
 - Make tests print out values, not just comparison results
 - More sparing with test cases
-- Add minimal __repr__ placeholder implementations so students can see data in objects
+- Add minimal **repr** placeholder implementations so students can see data in
+  objects
+- Change todo example to split setIsDone into setDone setUndone
+- Actually don't bother with done -> not done, not a realistic use-case
