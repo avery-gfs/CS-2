@@ -17,8 +17,8 @@ class TodoList:
         # Add a new task with a given name
         pass
 
-    def setIsDone(self, name, isDone):
-        # Update the status of the task that matches name
+    def markDone(self, name):
+        # Update the status of the task that matches name to be done
         pass
 
     def remove(self, name):
@@ -38,6 +38,6 @@ todo = TodoList()
 
 # todo.addTask("feed dog")
 # todo.addTask("water plants")
-# todo.setIsDone("feed dog", True)
+# todo.markDone("feed dog")
 
 print(todo)
