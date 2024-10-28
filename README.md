@@ -57,7 +57,11 @@ class Team:
         # Add row with summary information
         result += f"\n{numPlayers} players {totalBaskets}/{totalShots} total"
         return result
+```
 
+We can use the class like this:
+
+```py
 team = Team()
 
 team.addPlayer("alex")
@@ -65,10 +69,20 @@ team.addPlayer("marcus")
 
 team.addBasket("marcus")
 team.addBasket("marcus")
+
 team.addMiss("marcus")
 team.addMiss("alex")
 
 print(team)
+```
+
+The code above prints out the following:
+
+```
+alex 0/1
+marcus 2/3
+--------------------
+2 players 2/4 total
 ```
 
 ## Internal Representations:
