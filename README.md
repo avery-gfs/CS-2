@@ -3,6 +3,8 @@
 A dictionary is a collection of key/value pairs that allow us to look up the
 value associated with each key.
 
+https://runestone.academy/ns/books/published/fopp/Dictionaries/toctree.html?mode=browsing
+
 - Creation a dictionary:
 
   ```py
