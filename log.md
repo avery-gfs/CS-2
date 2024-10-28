@@ -6,6 +6,7 @@
 | if expressions      | x   | x   |
 | start to do list    | x   | x   |
 | finish to do list   | x   | x   |
+| dictionaries        |     |     |
 | project 1           |     |     |
 | climate             |     |     |
 | spell checker       |     |     |
