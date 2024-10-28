@@ -54,6 +54,8 @@ value associated with each key.
   "pineapple" in votes # False
   ```
 
+**Ice cream flavor voting:**
+
 ```py
 votes = { "strawberry": 1 }
 
