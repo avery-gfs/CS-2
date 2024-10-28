@@ -1,3 +1,73 @@
+## Dictionaries
+
+A dictionary is a collection of key/value pairs that allow us to look up the
+value associated with each key.
+
+- Creation a dictionary:
+
+  ```py
+  votes = { "strawberry": 1, "chocolate": 1, "vanilla": 1 }
+  ```
+
+- Look up a value:
+
+  ```py
+  votes["strawberry"] # 1
+  ```
+
+- Add a value:
+
+  ```py
+  votes["mint"] = 1 # votes = { "strawberry": 2, "chocolate": 1, "vanilla": 1, "mint": 1 }
+  ```
+
+- Update a value:
+
+  ```py
+  votes["strawberry"] = 2 # votes = { "strawberry": 2, "chocolate": 1, "vanilla": 1, "mint": 1 }
+  ```
+
+- Increment a value:
+
+  ```py
+  votes["chocolate"] += 1 # votes = { "strawberry": 2, "chocolate": 2, "vanilla": 1, "mint": 1 }
+  ```
+
+- Iterate over keys:
+
+  ```py
+  # Prints:
+  #
+  # strawberry 2
+  # chocolate 2
+  # vanilla 1
+  # mint 1
+
+  for flavor in votes:
+      print(flavor, votes[flavor])
+  ```
+
+- Check membership:
+
+  ```py
+  "mint" in votes # True
+  "pineapple" in votes # False
+  ```
+
+```py
+votes = { "strawberry": 1 }
+
+while True:
+    flavor = input("Enter for your favorite flavor: ")
+
+    if flavor in votes:
+        votes[flavor] += 1
+    else:
+        votes[flavor] = 1
+
+    print(votes)
+```
+
 ## Mutable Classes:
 
 This example uses two classes, `Player` and `Team`, to keep track of the
@@ -399,12 +469,12 @@ output.save("output.png")
 - Use the [`colorsys`](https://docs.python.org/3/library/colorsys.html) module
   to convert between RGB and HSL.
 
-```py
-import colorsys # put this at the top of your code along with the PIL import
+  ```py
+  import colorsys # put this at the top of your code along with the PIL import
 
-(h, s, l) = colorsys.rgb_to_hls(r, g, b) # get HSL from RGB
-(r, g, b) = colorsys.hls_to_rgb(h, l, s) # get RGB from HSL
-```
+  (h, s, l) = colorsys.rgb_to_hls(r, g, b) # get HSL from RGB
+  (r, g, b) = colorsys.hls_to_rgb(h, l, s) # get RGB from HSL
+  ```
 
 ## Review
 
