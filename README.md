@@ -1,6 +1,6 @@
 ## Dictionaries
 
-A dictionary is a collection of key/value pairs that allow us to look up the
+A dictionary is a collection of key/value pairs that allows us to look up the
 value associated with each key.
 
 https://runestone.academy/ns/books/published/fopp/Dictionaries/toctree.html?mode=browsing
@@ -61,15 +61,15 @@ https://runestone.academy/ns/books/published/fopp/Dictionaries/toctree.html?mode
 ```py
 votes = { "strawberry": 1 }
 
-while True:
+while True: # Loop forever
     flavor = input("Enter for your favorite flavor: ")
 
     if flavor in votes:
-        votes[flavor] += 1
+        votes[flavor] += 1 # Increase vote count by one
     else:
-        votes[flavor] = 1
+        votes[flavor] = 1 # Set initial vote count to one
 
-    print(votes)
+    print(votes) # Print out vote data after each new vote
 ```
 
 ## Mutable Classes:
@@ -121,7 +121,7 @@ class Team:
         result = "" # Use to build string representation
 
         for player in self.players:
-            result += str(player) + "\n" # Call player __repr__ method and add newline
+            result += f"{player}\n" # Calls player __repr__ method and add newline
             # Add players stats to totals
             totalBaskets += player.baskets
             totalShots += player.shots
