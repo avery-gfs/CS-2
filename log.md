@@ -38,3 +38,4 @@ Changes for next time:
   objects
 - Change todo example to split setIsDone into setDone setUndone
 - Actually don't bother with done -> not done, not a realistic use-case
+- Grade assignments for work and collect submissions
