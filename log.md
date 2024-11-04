@@ -1,18 +1,20 @@
 | Topic               | 1   | 2   |
 | ------------------- | --- | --- |
-| math methods start  | x   | x   |
-| math methods finish | x   | x   |
-| zero/twelve issue   | x   | x   |
-| if expressions      | x   | x   |
-| start to do list    | x   | x   |
-| finish to do list   | x   | x   |
-| dictionaries        |     |     |
-| project 1           |     |     |
-| climate             |     |     |
-| spell checker       |     |     |
-| ghost               |     |     |
-| probability         |     |     |
-| web api set         |     |     |
+| Math methods start  | x   | x   |
+| Math methods finish | x   | x   |
+| Zero/twelve issue   | x   | x   |
+| If expressions      | x   | x   |
+| Start to do list    | x   | x   |
+| Finish to do list   | x   | x   |
+| Scrabble word       | x   | x   |
+| Scrabble words      |     |     |
+| Players dictionary  |     |     |
+| Project 1           |     |     |
+| Climate             |     |     |
+| Spell checker       |     |     |
+| Ghost               |     |     |
+| Probability         |     |     |
+| Web api set         |     |     |
 
 Changes for next time:
 
