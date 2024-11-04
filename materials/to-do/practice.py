@@ -6,7 +6,7 @@ class Task:
 
     def __repr__(self):
         # Display the name and status of task
-        return str(self)
+        return f"Task"
 
 class TodoList:
     def __init__(self):
@@ -14,8 +14,7 @@ class TodoList:
         self.tasks = []
 
     def addTask(self, name):
-        # Add a new task with a given name
-        pass
+        self.tasks.append(Task(name))
 
     def markDone(self, name):
         # Update the status of the task that matches name to be done
@@ -36,8 +35,8 @@ class TodoList:
 
 todo = TodoList()
 
-# todo.addTask("feed dog")
-# todo.addTask("water plants")
-# todo.markDone("feed dog")
+todo.addTask("feed dog")
+todo.addTask("water plants")
+todo.markDone("feed dog")
 
 print(todo)
