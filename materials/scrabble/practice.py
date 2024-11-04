@@ -43,7 +43,14 @@ bestScore = 0 # Keep track of the score of bestWord
 # Find the word with the highest Scrabble score
 
 for word in words:
-    pass # Your code goes here!
+    score = 0
+
+    # Loop through each letter in the current word
+    for letter in word:
+        pass # Your code goes here!
+
+    if score > bestScore:
+        pass # Your code goes here!
 
 print(bestWord)
 
