@@ -1,14 +1,28 @@
 ## More Dictionary Methods
 
-- keys
-- values
-- items
-- del
-- get
-- setDefault
+https://docs.python.org/3/library/stdtypes.html#dict
+
+- [`keys()`](https://www.w3schools.com/python/ref_dictionary_keys.asp)
+- [`values()`](https://www.w3schools.com/python/ref_dictionary_values.asp)
+- [`items()`](https://www.w3schools.com/python/ref_dictionary_items.asp)
+- [`get(key, default)`](https://www.w3schools.com/python/ref_dictionary_get.asp)
+- [`setDefault(key, default)`](https://www.w3schools.com/python/ref_dictionary_setdefault.asp)
+- [`pop(value)`](https://www.w3schools.com/python/ref_dictionary_pop.asp)
+
+Simplifying the previous example code using `get(key, default)`, which allows us
+to look up a key in the dictionary with a default value to return if the key
+isn't present. This lets us simplify the logic of adding new flavors to our vote
+dictionary.
 
 ```py
-votes = { "strawberry": 1, "chocolate": 2, "vanilla": 3, "cookie dough": 4 }
+votes = { "strawberry": 1 }
+
+while True: # Loop forever
+    flavor = input("Enter for your favorite flavor: ")
+    # Increase the vote count for flavor by 1, using 0 as the default current
+    # value if the flavor isn't in the votes dictionary yet
+    votes[flavor] = votes.get(flavor, 0) + 1
+    print(votes) # Print out vote data after each new vote
 ```
 
 ## Dictionaries
