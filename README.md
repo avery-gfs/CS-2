@@ -27,6 +27,22 @@ while True: # Loop forever
     print(votes) # Print out vote data after each new vote
 ```
 
+`items()` is nice for iterating over keys and values at the same time.
+
+```py
+votes = { "strawberry": 1, "chocolate": 2, "vanilla": 3, "cookie dough": 4 }
+
+# prints:
+#
+# strawberry 1
+# chocolate 2
+# vanilla 3
+# cookie dough 4
+
+for (key, value) in votes.items():
+    print(key, value)
+```
+
 ## Dictionaries
 
 A dictionary is a collection of key/value pairs that allows us to look up the
