@@ -1,3 +1,16 @@
+## More Dictionary Methods
+
+- keys
+- values
+- items
+- del
+- get
+- setDefault
+
+```py
+votes = { "strawberry": 1, "chocolate": 2, "vanilla": 3, "cookie dough": 4 }
+```
+
 ## Dictionaries
 
 A dictionary is a collection of key/value pairs that allows us to look up the
