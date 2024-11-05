@@ -1,7 +1,5 @@
 ## More Dictionary Methods
 
-https://docs.python.org/3/library/stdtypes.html#dict
-
 - [`keys()`](https://www.w3schools.com/python/ref_dictionary_keys.asp)
 - [`values()`](https://www.w3schools.com/python/ref_dictionary_values.asp)
 - [`items()`](https://www.w3schools.com/python/ref_dictionary_items.asp)
@@ -9,7 +7,11 @@ https://docs.python.org/3/library/stdtypes.html#dict
 - [`setDefault(key, default)`](https://www.w3schools.com/python/ref_dictionary_setdefault.asp)
 - [`pop(value)`](https://www.w3schools.com/python/ref_dictionary_pop.asp)
 
-Simplifying the previous example code using `get(key, default)`, which allows us
+https://docs.python.org/3/library/stdtypes.html#dict
+
+https://www.w3schools.com/python/python_ref_dictionary.asp
+
+We can simplify the previous example code using `get(key, default)`, which allows us
 to look up a key in the dictionary with a default value to return if the key
 isn't present. This lets us simplify the logic of adding new flavors to our vote
 dictionary.
