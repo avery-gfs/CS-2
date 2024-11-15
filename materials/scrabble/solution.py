@@ -37,8 +37,8 @@ letterPoints = {
     "z": 10,
 }
 
+bestScore = 0 # Keep track of the highest score
 bestWord = None # Keep track of the highest scoring word
-bestScore = 0 # Keep track of the score of bestWord
 
 # Find the word with the highest Scrabble score
 
@@ -47,10 +47,14 @@ for word in words:
 
     # Loop through each letter in the current word
     for letter in word:
-        pass # Your code goes here!
+        score += letterPoints[letter]
+
+    # Alternatively, we could use:
+    # score = sum(letterPoints[letter] for letter in word)
 
     if score > bestScore:
-        pass # Your code goes here!
+        bestScore = score
+        bestWord = word
 
 print(bestWord)
 
@@ -64,7 +68,15 @@ bestScores = {} # Keep track of the scores for bestWords
 # Find the word with the highest Scrabble score
 
 for word in words:
-    pass # Your code goes here!
+    firstLetter = word[0]
+    score = 0
+
+    for letter in word:
+        score += letterPoints[letter]
+
+    if bestScores.get(firstLetter, 0) < score:
+        bestWords[firstLetter] = word
+        bestScores[firstLetter] = score
 
 for letter in bestScores:
     print(letter, bestWords[letter], bestScores[letter])
